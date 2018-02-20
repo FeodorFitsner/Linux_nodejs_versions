@@ -8,8 +8,8 @@ environment:
 
 
 test_script:
-- sh: echo "Test!"
-- ps: exit 1
+#- sh: echo "Test!"
+#- ps: exit 1
 - sh: |
     . $HOME/.nvm/nvm.sh
     echo Current
