@@ -11,7 +11,7 @@ test_script:
 #- sh: echo "Test!"
 #- ps: exit 1
 - sh: ls /bin -al
-- sh: exit 1
+#- sh: exit 1
 - sh: |
     . $HOME/.nvm/nvm.sh
     echo Current
@@ -22,7 +22,7 @@ test_script:
         echo "Current Node.js version is Correct"
     else
         echo "Current Node.js version should be ${expected_current_node}.x"
-        exit 0
+        exit 3
     fi
 
 - sh: |
@@ -34,7 +34,7 @@ test_script:
         echo "Default Node.js version is Correct"
     else
         echo "Default Node.js version should be ${expected_default_node}.x"
-        exit 0
+        exit 4
     fi
 
 - sh: |
