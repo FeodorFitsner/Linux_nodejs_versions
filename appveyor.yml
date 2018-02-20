@@ -1,5 +1,4 @@
-build_cloud: LinuxGCE
-image: Linux GCE
+image: Ubuntu
 
 environment:
   expected_default_node: v4.
