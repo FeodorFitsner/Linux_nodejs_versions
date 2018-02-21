@@ -39,5 +39,11 @@ test_script:
 
 artifacts:
   - path: '**\*.txt'
+  
+on_failure:
+- sh: echo Failure!
+
+on_success:
+- sh: echo Success!
 
 build: off
