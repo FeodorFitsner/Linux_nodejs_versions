@@ -24,7 +24,7 @@ test_script:
         echo "Current Node.js version should be ${expected_current_node}.x"
         exit 3
     fi
-
+- sh: dir
 - sh: |
     . $HOME/.nvm/nvm.sh
     echo Default
