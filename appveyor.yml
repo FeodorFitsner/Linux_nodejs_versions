@@ -34,7 +34,7 @@ test_script:
         echo "Default Node.js version is Correct"
     else
         echo "Default Node.js version should be ${expected_default_node}.x"
-        exit 0
+        exit 1
     fi
 
 - sh: |
